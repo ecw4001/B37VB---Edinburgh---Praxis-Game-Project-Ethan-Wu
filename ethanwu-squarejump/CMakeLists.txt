@@ -32,6 +32,9 @@ set_property(TARGET ${PROJECT_NAME} PROPERTY
 
 target_link_libraries(${PROJECT_NAME} raylib)
 
+#set(raylib_VERBOSE 1) 
+target_link_libraries(${PROJECT_NAME} raylib)
+
 # Web Configurations
 if ("${PLATFORM}" STREQUAL "Web")
     set_target_properties(${PROJECT_NAME} PROPERTIES SUFFIX ".html")
