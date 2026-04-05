@@ -43,12 +43,9 @@ To build and run this game on Windows, you need:
 
 Open the project folder in Developer PowerShell for VS 2022 and run:
 
-Run Command:
-.\build\raylib-game-template\Debug\raylib-game-template.exe
-
 ```powershell
 cmake -S . -B build -G "Visual Studio 17 2022" -A x64
 cmake --build build --config Debug ```
 
-.\build\raylib-game-template\Debug\raylib-game-template.exe
+`.\build\raylib-game-template\Debug\raylib-game-template.exe`
 
