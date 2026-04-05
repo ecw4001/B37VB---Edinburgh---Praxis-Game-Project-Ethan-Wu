@@ -1,37 +1,48 @@
-# B37VB---Edinburgh---Praxis-Game-Project-Ethan-Wu
-
 # SQUAREJUMP
 
 SQUAREJUMP is a simple endless runner game made in C using raylib.
 
-The player controls a square that must jump over incoming obstacles. The game continues until the player collides with an obstacle. The score increases as more obstacles are passed.
+The player controls a square and must jump over incoming obstacles. The game continues until the player hits an obstacle. The score increases when obstacles are passed, and the high score is shown on the ending screen.
 
-## How to Play
+## Controls
 
-- Press **ENTER** or **SPACE** on the title screen to start
-- Press **SPACE** or **UP ARROW** to jump
-- Avoid hitting the obstacles
-- After losing, press **ENTER** or **SPACE** to play again
+- **ENTER** - start the game
+- **SPACE** - jump
+- **UP ARROW** - jump
+- **ENTER** or **SPACE** on the ending screen - play again
 
-## Game Rules
+## Rules of the Game
 
-- The player moves automatically through the game
-- Obstacles come from the right side of the screen
-- Each obstacle passed increases the score
-- The game ends when the player hits an obstacle
-- The high score is shown on the ending screen
+- Press **ENTER** to start from the title screen.
+- The square must jump over obstacles coming from the right side of the screen.
+- Each obstacle passed increases the score.
+- If the square collides with an obstacle, the game ends.
+- The ending screen displays the score and high score.
+- The player can then press a key to play again.
 
-## Files
+## Project Files
 
-- `screen_title.c` - title screen
-- `screen_gameplay.c` - main gameplay
-- `screen_ending.c` - game over screen
-- `raylib_game.c` - screen switching and main flow
-- `screens.h` - shared declarations
+- `CMakeLists.txt` - main CMake build file
+- `src/CMakeLists.txt` - source folder CMake file
+- `src/raylib_game.c` - main game flow and screen switching
+- `src/screen_title.c` - title screen
+- `src/screen_gameplay.c` - main gameplay
+- `src/screen_ending.c` - ending screen
+- `src/screens.h` - shared declarations
+- src/resources/ - resources folder
+
+## Requirements
+
+To build and run this game on Windows, you need:
+
+- CMake
+- Visual Studio Build Tools 2022 or Visual Studio 2022
+- Desktop development with C++ workload
+- raylib (handled through the provided CMake setup)
 
 ## How to Compile
 
-Open the project folder in "Developer PowerShell for VS 2022" or a terminal with MSVC available and run -
+Open the project folder in **Developer PowerShell for VS 2022** and run:
 
 ```powershell
 cmake -S . -B build -G "Visual Studio 17 2022" -A x64
