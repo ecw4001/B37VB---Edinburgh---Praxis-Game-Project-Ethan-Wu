@@ -6,10 +6,9 @@ The player controls a square and must jump over incoming obstacles. The game con
 
 ## Controls
 
-- **ENTER** - start the game
-- **SPACE** - jump
-- **UP ARROW** - jump
-- **ENTER** or **SPACE** on the ending screen - play again
+- **ENTER/SPACE** - start the game
+- **SPACE/UP ARROW** - jump
+- **ENTER/SPACE** on the ending screen - play again
 
 ## Rules of the Game
 
@@ -29,7 +28,7 @@ The player controls a square and must jump over incoming obstacles. The game con
 - `src/screen_gameplay.c` - main gameplay
 - `src/screen_ending.c` - ending screen
 - `src/screens.h` - shared declarations
-- src/resources/ - resources folder
+- `src/resources/` - resources folder
 
 ## Requirements
 
@@ -42,8 +41,14 @@ To build and run this game on Windows, you need:
 
 ## How to Compile
 
-Open the project folder in **Developer PowerShell for VS 2022** and run:
+Open the project folder in Developer PowerShell for VS 2022 and run:
+
+Run Command:
+.\build\raylib-game-template\Debug\raylib-game-template.exe
 
 ```powershell
 cmake -S . -B build -G "Visual Studio 17 2022" -A x64
-cmake --build build --config Debug
+cmake --build build --config Debug ```
+
+.\build\raylib-game-template\Debug\raylib-game-template.exe
+
