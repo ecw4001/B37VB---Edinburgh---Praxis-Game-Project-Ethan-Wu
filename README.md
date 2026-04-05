@@ -8,10 +8,10 @@ The player controls a square that must jump over incoming obstacles. The game co
 
 ## How to Play
 
-- Press **ENTER** or "SPACE" on the title screen to start
-- Press **SPACE** or "UP ARROW" to jump
+- Press **ENTER** or **SPACE** on the title screen to start
+- Press **SPACE** or **UP ARROW** to jump
 - Avoid hitting the obstacles
-- After losing, press "ENTER" or "SPACE" to play again
+- After losing, press **ENTER** or **SPACE** to play again
 
 ## Game Rules
 
