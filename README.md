@@ -16,22 +16,20 @@ The player controls a square and must jump over incoming obstacles. The game con
 - `src/screens.h` - shared declarations
 
 
-## Requirements
-
-To build and run this game on Windows, you need:
-
-- CMake
-- Visual Studio Build Tools 2022 or Visual Studio 2022
-- Desktop development with C++ workload
-- raylib (handled through the provided CMake setup)
-
 ## How to Compile
 
 Open the project folder in Developer PowerShell for VS 2022 and run:
 
 ```powershell
 cmake -S . -B build -G "Visual Studio 17 2022" -A x64
-cmake --build build --config Debug 
+cmake --build build --config Debug
+```
 
-.\build\raylib-game-template\Debug\raylib-game-template.exe (or your build command)
+## How to Run
+
+From the project folder, run:
+
+```powershell
+.\build\raylib-game-template\Debug\raylib-game-template.exe (or your build command from your folder)
+```
 
